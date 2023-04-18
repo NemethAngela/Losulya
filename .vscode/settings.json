@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": ["src", "test"],    //forrás könyvtár
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}
