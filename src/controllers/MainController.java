@@ -10,14 +10,14 @@ public class MainController {
         handleEvents();
     }
 
-    private void handleEvents() { //kattintásra
+    public void handleEvents() { //kattintásra
         this.mainFrame.getCalcButton().addActionListener(e -> {
             this.startCalc(); //itt hívjuk meg
         });
 
     }
 
-    private void startCalc() {
+    public void startCalc() {
         System.out.println("Működik");
         double perimeter = Double.parseDouble(
             this.mainFrame.getPerimeterPanel().getValue());  //ezzel kérdezzük le, mi van az inputpanelben
@@ -27,8 +27,8 @@ public class MainController {
         this.mainFrame.getWeightPanel().setValue(weight.toString());
     }
 
-    private double calcWeight(double perimeter, double lenght) {    //ezt tudjuk tesztelni
-        double weight = (perimeter * perimeter * lenght)/11/11877;
+    public double calcWeight(double perimeter, double lenght) {    //ezt tudjuk tesztelni
+        double weight = (perimeter * perimeter * lenght)/11877;
         return weight;
     }
     
